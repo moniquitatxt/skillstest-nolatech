@@ -1,6 +1,6 @@
 import LiveBar from "./components/LiveBar";
 import { AboutUs } from "./segments/AboutUs";
-import { Carousel } from "./segments/Carousel";
+import { CarouselView } from "./segments/CarouselView";
 import { ContactUs } from "./segments/ContactUs";
 import { FooterSection } from "./segments/FooterSection";
 import { Home } from "./segments/Home";
@@ -20,7 +20,7 @@ function App() {
 			<LatestsVideos />
 			<JoinUs />
 			<ViewAll />
-			<Carousel />
+			<CarouselView />
 			<FooterSection />
 		</>
 	);

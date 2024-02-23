@@ -7,6 +7,7 @@ module.exports = {
 				primaryGreen: "#03b044",
 				customRed: "#e92100",
 				hoverGreen: "#07913b",
+				treeGreen: "#016648",
 				darkGreen: "#025923",
 				lightGrey: "#f7f8fb",
 				darkWhite: "#f5f6fa",

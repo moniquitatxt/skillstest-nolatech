@@ -3,7 +3,7 @@ import JoinUsPic from "../assets/JoinUs.png";
 export const JoinUs = () => {
 	return (
 		<div
-			className="bg-cover h-[110vh] p-20 shadow-inner "
+			className="bg-cover h-[120vh] p-20 shadow-inner "
 			style={{ backgroundImage: `url(${JoinUsPic})` }}
 		>
 			<div className="md:absolute md:left-[55%] md:pr-20 sm:justify-center flex flex-col">

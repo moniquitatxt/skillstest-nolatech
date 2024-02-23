@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import logo from "../assets/icon.png";
 import { BsList } from "react-icons/bs";
 
