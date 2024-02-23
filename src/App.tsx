@@ -1,4 +1,5 @@
 import LiveBar from "./components/LiveBar";
+import SocialMediaBar from "./components/SocialMediaBar";
 import { AboutUs } from "./segments/AboutUs";
 import { CarouselView } from "./segments/CarouselView";
 import { ContactUs } from "./segments/ContactUs";
@@ -22,6 +23,7 @@ function App() {
 			<ViewAll />
 			<CarouselView />
 			<FooterSection />
+			<SocialMediaBar />
 		</>
 	);
 }
