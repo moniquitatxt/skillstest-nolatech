@@ -11,6 +11,58 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+@layer base {
+	h2 {
+		@apply text-7xl font-bold;
+	}
+	li {
+		@apply mx-4;
+	}
+	img {
+		@apply max-w-[480px] sm:mx-auto;
+	}
+}
+
+@layer components {
+	.bg-primary-green {
+		@apply bg-primaryGreen text-white;
+	}
+	.btn-base-small {
+		@apply rounded-md font-semibold;
+	}
+
+	.btn-white-base {
+		@apply px-10 py-3 mx-auto rounded-md font-bold;
+	}
+
+	.btn-transparent {
+		@apply btn-white-base outline outline-2;
+	}
+
+	.btn-white {
+		@apply btn-white-base bg-white;
+	}
+	.btn-green {
+		@apply bg-primary-green btn-base-small px-4 py-2;
+	}
+
+	.h3-black {
+		@apply text-6xl font-bold sm:text-center;
+	}
+
+	.h3-white {
+		@apply text-6xl text-white font-bold sm:text-center;
+	}
+
+	.p-black {
+		@apply sm:my-3 sm:text-sm sm:text-center md:my-6 md:text-lg;
+	}
+
+	.container-base {
+		@apply md:px-20 sm:px-10;
+	}
+}
+
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
 		monospace;
