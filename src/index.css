@@ -13,7 +13,7 @@ body {
 
 @layer base {
 	h2 {
-		@apply text-7xl font-bold;
+		@apply md:text-7xl sm:text-6xl font-bold;
 	}
 	li {
 		@apply mx-4;
@@ -22,7 +22,7 @@ body {
 		@apply max-w-[480px] sm:mx-auto;
 	}
 	input {
-		@apply rounded-md bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primaryGreen;
+		@apply rounded-md p-3 text-lg font-semibold bg-white placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-primaryGreen;
 	}
 }
 
@@ -46,7 +46,7 @@ body {
 		@apply btn-white-base bg-white;
 	}
 	.btn-green {
-		@apply bg-primary-green btn-base-small px-4 py-2;
+		@apply bg-primary-green btn-base-small sm:text-xl sm:px-6 sm:py-3;
 	}
 
 	.h3-black {
@@ -56,9 +56,15 @@ body {
 	.h3-white {
 		@apply text-6xl text-white font-bold sm:text-center;
 	}
+	.p-base {
+		@apply sm:my-3 sm:text-sm sm:text-center md:my-6 md:text-lg;
+	}
 
 	.p-black {
-		@apply sm:my-3 sm:text-sm sm:text-center md:my-6 md:text-lg;
+		@apply p-base;
+	}
+	.p-white {
+		@apply p-base text-white;
 	}
 
 	.container-base {
