@@ -8,13 +8,15 @@ export const CarouselView = () => {
 	const pictures = [Pic7, Pic8, Pic9, Pic10];
 
 	return (
-		<div className="bg-treeGreen py-12">
+		<div className="bg-treeGreen py-2">
 			<div className="max-w-5xl mx-auto">
-				<h3 className="h3-white text-center mb-10">
+				<h3 className="h3-white text-center md:my-20 sm:my-10">
 					Lorem ipsum dolor sit amet
 				</h3>
-				<Carousel pictures={pictures} />
-				<div className="flex justify-center my-10">
+				<div className="md:max-w-[450px] sm:max-w-[300px] flex justify-center mx-auto ">
+					<Carousel pictures={pictures} />
+				</div>
+				<div className="flex justify-center md:my-16 sm:my-8">
 					<button className="btn-white w-[200px] mt-4 ">VIEW ALL</button>
 				</div>
 			</div>

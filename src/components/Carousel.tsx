@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+
 interface CarouselProps {
-	pictures: any[];
+	pictures: string[];
 }
 
 const Carousel = ({ pictures }: CarouselProps) => {
@@ -14,24 +15,30 @@ const Carousel = ({ pictures }: CarouselProps) => {
 		return () => clearInterval(interval);
 	}, [current, pictures.length]);
 
+	const handlePrev = () => {
+		setCurrent((current - 1 + pictures.length) % pictures.length);
+	};
+
+	const handleNext = () => {
+		setCurrent((current + 1) % pictures.length);
+	};
+
 	return (
-		<div className="w-full overflow-hidden">
+		<div className="relative w-full overflow-hidden">
 			<div
 				className="flex transition-transform duration-500 ease-in"
-				style={{ marginLeft: `calc((100% - 300px) / 2 - ${current * 300}px)` }}
+				style={{ transform: `translateX(-${current * 100}%)` }}
 			>
 				{pictures.map((picture, index) => (
 					<img
 						key={index}
 						src={picture}
 						alt={`carousel-${index}`}
-						className={`w-[300px] h-auto ml-${
-							index === 0 ? "0" : "300"
-						} transform transition-transform duration-500 ease-in ${
-							index === current ? "z-10" : "z-0"
-						}`}
+						className="w-full h-auto object-cover"
 						style={{
-							transform: `translateX(${100 * (index - current)}%)`,
+							minWidth: "100%",
+							maxWidth: "100%",
+							height: "auto",
 							borderRadius: "10px",
 							boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.5)",
 						}}
@@ -39,11 +46,11 @@ const Carousel = ({ pictures }: CarouselProps) => {
 				))}
 			</div>
 
-			<div className="flex justify-center gap-4 mt-10">
+			<div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2">
 				{pictures.map((_, index) => (
 					<div
 						key={index}
-						className={`w-4 h-4 rounded-full cursor-pointer ${
+						className={`w-3 h-3 rounded-full cursor-pointer ${
 							current === index ? "bg-primaryGreen" : "bg-white"
 						}`}
 						onClick={() => setCurrent(index)}
