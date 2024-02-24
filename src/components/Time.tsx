@@ -28,12 +28,12 @@ const Time = () => {
 	}, [days, hours, minutes, seconds]);
 
 	return (
-		<div className="bg-green-900 text-white p-4">
-			<div className="flex justify-between gap-10">
-				<h3 className="font-bold text-2xl w-full sm:text-center md:w-1/5">
+		<div className="bg-darkGreen  text-white p-6">
+			<div className="flex justify-center items-center">
+				<h3 className="font-bold text-2xl w-full md:ml-56 sm:text-center md:w-1/5">
 					Lorem ipsum dolor sit amet, consectetur
 				</h3>
-				<div className="flex justify-center items-center flex-row gap-2 w-full md:w-4/5">
+				<div className="flex justify-center items-center flex-row  w-full md:w-4/5">
 					<Container measure={"days"} time={days} />
 					<Divider />
 					<Container measure={"hours"} time={hours} />
@@ -59,8 +59,12 @@ interface ContainerProps {
 const Container = ({ time, measure }: ContainerProps) => {
 	return (
 		<div className="text-center">
-			<p className="font-bold text-4xl">{time}</p>
-			<p className="text-base text-green-500">{measure}</p>
+			<p className="font-bold md:text-5xl md:mx-8 sm:mx-2.5 sm:text-2xl">
+				{time}
+			</p>
+			<p className="md:text-base sm:text-xs sm:mx-2.5 text-green-500">
+				{measure}
+			</p>
 		</div>
 	);
 };

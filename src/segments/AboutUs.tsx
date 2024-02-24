@@ -2,7 +2,7 @@ import Pic from "../assets/Pic1.png";
 
 export const AboutUs = () => {
 	return (
-		<div className="container-base md:flex md:justify-around sm:mx-auto sm:justify-center">
+		<div className="container-base py-16 md:flex md:justify-around sm:mx-auto sm:justify-center">
 			<div className="md:flex md:justify-center md:max-w-[1000px] md:mx-auto">
 				<div className="mr-[20px] md:w-[50%]">
 					<h3 className="h3-black">
