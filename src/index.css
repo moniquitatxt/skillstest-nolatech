@@ -74,6 +74,10 @@ body {
 	.social-squares {
 		@apply flex justify-center text-white;
 	}
+
+	.social-squares-div {
+		@apply border border-slate-800 bg-gray-500 p-3.5;
+	}
 }
 
 code {

@@ -16,7 +16,7 @@ export const ContactUs = () => {
 						</button>
 					</div>
 				</div>
-				<div className="md:w-[50%]">
+				<div className="md:w-[500px] md:flex md:items-end ">
 					<img src={Pic5} alt="imagen" width="480px" className="w-full"></img>
 				</div>
 			</div>

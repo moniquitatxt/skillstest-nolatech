@@ -13,7 +13,7 @@ export const LearnMore = () => {
 	return (
 		<div className="container-base bg-darkWhite py-12 justify-center ">
 			<div className="text-center">
-				<h3 className="h3-black">Lorem ipsum</h3>
+				<h3 className="h3-black sm:mb-10">Lorem ipsum</h3>
 				<p className="p-black max-w-[600px] mx-auto ">
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
 					nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,

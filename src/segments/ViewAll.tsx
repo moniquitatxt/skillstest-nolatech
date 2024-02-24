@@ -10,7 +10,7 @@ export const ViewAll = () => {
 			}}
 		>
 			<div className="items-center md:ml-20 md:flex ">
-				<div className="md:pl-20 py-10 sm:text-center   md:mr-[20px] ">
+				<div className="md:pl-12 py-10 sm:text-center   md:mr-[20px] ">
 					<h2 className="sm:mx-auto max-w-[450px] ">Lorem ipsum dolor sit</h2>
 					<p className="sm:mx-auto  max-w-[400px] mt-6">
 						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam

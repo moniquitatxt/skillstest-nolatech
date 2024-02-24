@@ -3,10 +3,10 @@ import JoinUsPic from "../assets/JoinUs.png";
 export const JoinUs = () => {
 	return (
 		<div
-			className="bg-cover h-[120vh] p-20 shadow-inner "
+			className="bg-cover md:h-[120vh] sm:max-h-[120vh] md:p-20 sm:p-8 shadow-inner "
 			style={{ backgroundImage: `url(${JoinUsPic})` }}
 		>
-			<div className="md:absolute md:left-[55%] md:pr-20 sm:justify-center flex flex-col">
+			<div className="md:absolute md:left-[55%] md:pr-20 flex flex-col">
 				<h3 className="h3-white">JOIN US.</h3>
 				<p className="p-white">
 					Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
